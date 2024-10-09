@@ -1,0 +1,23 @@
+BasedOnStyle: LLVM
+IndentWidth: 4
+UseTab: Never
+BreakBeforeBraces: WebKit
+ReflowComments: true
+FixNamespaceComments: true
+NamespaceIndentation: None
+PointerAlignment: Left
+ColumnLimit: 100
+SpacesInLineCommentPrefix:
+    Minimum: 1
+BreakConstructorInitializers: AfterColon
+AllowAllConstructorInitializersOnNextLine: false
+ConstructorInitializerAllOnOneLineOrOnePerLine: true
+# PackConstructorInitializers: Never
+AlignAfterOpenBracket: DontAlign
+AccessModifierOffset: -4
+AllowShortBlocksOnASingleLine: Empty
+AllowShortEnumsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+AlwaysBreakTemplateDeclarations: Yes
