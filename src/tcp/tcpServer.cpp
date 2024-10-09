@@ -6,6 +6,7 @@
 #include <string.h>
 #include <sys/socket.h>
 #include <unistd.h>
+#include <format>
 
 enum Type {
     TYPE_GET,
@@ -95,7 +96,7 @@ bool serve_request(int channel)
     length = ntohl(length);
 
     if (length > MAX_MESSAGE_LENGTH) {
-        std::cerr << "Длина сообщения превышает максимально допустимую" << std::endl;
+        std::cerr << std::format("Длина сообщения превышает максимально допустимую, {} > {}", length, MAX_MESSAGE_LENGTH) << std::endl;
         send_error(channel, "Invalid message length");
         return false;
     }
